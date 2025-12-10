@@ -89,7 +89,7 @@ jobs:
       - name: Upload JAR file
         uses: actions/upload-artifact@v4
         with:
-          name: geo_app-jar
+          name: utc_app-jar
           path: target/*.jar  
           
           
@@ -105,7 +105,7 @@ jobs:
      - name: Download JAR file artifact
        uses: actions/download-artifact@v4
        with:
-         name: geo_app-jar
+         name: utc_app-jar
          path: target/
 
      # Load secrets from Vault and set as env variables for rest of job
